@@ -9,18 +9,15 @@
 
 # Ask for the money invested + the interest rate
 
-money_amount, interest = input(
-    "Please enter your investment amount and your interest rate: "
-).split()
+moneyAmount = float(input("Enter your amount of money to invest: "))
+interestValue = float(input("Enter the interest rate: "))
 
-# convert the values to float data type and round the percentage to it to 2 decimal places
-money_amount = float(money_amount)
-
-interest = float(interest) * 0.01
+# convert the float point to 2 decimal places
+interest = float(interestValue) * 0.01
 
 
 # Cycle through 10 years using a for loop and range
 for money in range(10):
-    money_amount = money_amount + (money_amount * interest)
+    moneyAmount = moneyAmount + (moneyAmount * interestValue)
 
-print("Your investment yield after 10 years is: {:.2f}".format(money_amount))
+print("Your investment yield after 10 years is: {:.2f}".format(moneyAmount))
