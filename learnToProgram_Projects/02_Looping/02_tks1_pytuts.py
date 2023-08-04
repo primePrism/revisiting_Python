@@ -13,11 +13,11 @@ moneyAmount = float(input("Enter your amount of money to invest: "))
 interestValue = float(input("Enter the interest rate: "))
 
 # convert the float point to 2 decimal places
-interest = float(interestValue) * 0.01
+interestValue = interestValue * 0.01
 
 
 # Cycle through 10 years using a for loop and range
-for money in range(10):
+for year in range(1, 11):
     moneyAmount = moneyAmount + (moneyAmount * interestValue)
 
 print("Your investment yield after 10 years is: {:.2f}".format(moneyAmount))
