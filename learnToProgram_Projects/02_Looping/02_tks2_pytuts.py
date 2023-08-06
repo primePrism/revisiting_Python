@@ -27,28 +27,27 @@ stump_spaces = tree_height - 1
 
 # Make sure the right number of rows are printed
 while tree_height != 0:
-
-# print the spaces using end='' in print
+    # print the spaces using end='' in print
     for i in range(spaces):
-        print(' ', end="")
+        print(" ", end="")
 
-# Print the hashes
+    # Print the hashes
     for i in range(hashes):
-        print('#', end="")
+        print("#", end="")
 
-# Newline after each row is printed
+    # Newline after each row is printed
     print()
-# That is decreamented by 1 each time
-    spaces -= 1 
+    # spaces that is decreamented by 1 each time
+    spaces -= 1
 
-# that hashes is increamented by 2 each time
+    # hashes is increamented by 2 each time
     hashes += 2
 
-# Decrement tree height each time to jump out of the loop
+    # Decrement tree height each time to jump out of the loop
     tree_height -= 1
 
 # Print the spaces before the stump and then the hash
 for i in range(stump_spaces):
-    print(' ', end="")
+    print(" ", end="")
 
 print("#")
