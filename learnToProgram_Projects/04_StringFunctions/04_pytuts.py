@@ -40,3 +40,6 @@ print("Where is string :", rand_string.find("string"))
 
 # Replace a substring
 print(rand_string.replace("an ", "a kind of "))
+
+
+
