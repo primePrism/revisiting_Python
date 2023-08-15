@@ -10,6 +10,7 @@ def solve_X(equation):
     return "x = " + str(num2 - num1)
 
 
+# ___________checking for prime numbers________
 def isPrime(num):
     for x in range(2, num):
         if (num % x) == 0:
