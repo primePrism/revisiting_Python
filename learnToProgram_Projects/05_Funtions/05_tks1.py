@@ -2,13 +2,13 @@
 # for functions with unknown number of arguments
 
 
-def sumAll(*args):
-    sum = 0
+# def sumAll(*args):
+#     sum = 0
 
-    for i in args:
-        sum += i
+#     for i in args:
+#         sum += i
 
-    return sum
+#     return sum
 
 
-print("Summing everything is : ", sumAll(1, 54, 89))
+# print("Summing everything is : ", sumAll(1, 54, 89))
